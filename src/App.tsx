@@ -3,7 +3,6 @@ import "./App.css";
 
 function App() {
   const [dogImage, setDogImage] = useState();
-
   // TODO: define additional state variable
 
   function generateDog() {
@@ -13,8 +12,8 @@ function App() {
         setDogImage(data.message);
       });
 
-    // TODO: make API call for dog name
-    //       add store in state variable
+    // TODO: make API call for joke and store
+    //       necessary data in state variables
   }
 
   return (
@@ -23,9 +22,11 @@ function App() {
       <button onClick={generateDog}>Generate Dog</button>
 
       <div>
-        {/* TODO: Display dog name from state variable */}
-        <h2>TODO</h2>
+        {/* TODO: Replace placeholders for setup and punchline
+                  with fetched data from state variable */}
+        <h2>Setup</h2>
         <img src={dogImage} alt="dog" />
+        <p>Punchline</p>
       </div>
     </main>
   );
