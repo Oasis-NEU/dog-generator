@@ -18,10 +18,10 @@ function App() {
 
   return (
     <main>
-      <h1>Dog Generator 🐶</h1>
-      <button onClick={generateDog}>Generate Dog</button>
+      <h1>Dog Meme Generator 🐶</h1>
+      <button onClick={generateDog}>Generate Dog Meme</button>
 
-      <div>
+      <div className="meme">
         {/* TODO: Replace placeholders for setup and punchline
                   with fetched data from state variable */}
         <h2>Setup</h2>
